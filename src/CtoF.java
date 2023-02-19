@@ -7,7 +7,7 @@ public class CtoF {
         //Variables
         double fahrenheit;
         int celsius = 0;
-        String wrongInput = "";
+        String wrongInput;
 
 
         //prompt for input
@@ -16,6 +16,7 @@ public class CtoF {
         if(in.hasNextInt())
         {
             celsius = in.nextInt();
+            in.nextLine();
         }
         //for any incorrect input
         else
